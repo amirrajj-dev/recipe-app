@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-dana-regular
+}
+
+@layer base {
+  /* adding local fonts  */
+  @font-face {
+    font-family: 'dana-demi';
+    src: url('') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'dana-medium';
+    src: url('/Dana-FaNum-Medium.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'dana-regular';
+    src: url('/Dana-FaNum-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'dana-demi';
+    src: url('/Dana-FaNum-DemiBold.ttf') format('truetype');
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+* {
+  scrollbar-width: thin;
+}
